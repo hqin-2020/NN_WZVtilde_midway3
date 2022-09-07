@@ -25,11 +25,11 @@ else
     mkdir -p ./bash/$domain_folder
 fi
 
-for chiUnderline in 1.0
+for chiUnderline in 0.5 0.2
 do 
-    for a_e in 0.15
+    for a_e in 0.14
     do
-        for a_h in 0.13 0.1 0.07 0.05
+        for a_h in 0.135
         do
             for gamma_e in 1.0
             do
@@ -51,9 +51,9 @@ do
                                     do
                                         for boundary2 in 5
                                         do
-                                            for points_size in 2
+                                            for points_size in 3
                                             do
-                                                for iter_num in 10 15
+                                                for iter_num in 10
                                                 do                                                                                                
                                                     for XiE_layers in 5
                                                     do 
