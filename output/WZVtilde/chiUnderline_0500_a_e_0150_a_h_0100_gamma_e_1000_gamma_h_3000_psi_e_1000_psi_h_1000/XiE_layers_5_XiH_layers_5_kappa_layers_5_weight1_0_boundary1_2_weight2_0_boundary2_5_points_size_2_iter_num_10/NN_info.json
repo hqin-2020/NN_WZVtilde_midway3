@@ -1,0 +1,1 @@
+{"XiE_layers": 5, "XiH_layers": 5, "kappa_layers": 5, "weight1": 0.0, "boundary1": 2, "weight2": 0.0, "boundary2": 5, "points_size": 2, "dimension": 3, "units": 16, "activation": "tanh", "kernel_initializer": "glorot_normal", "iter_num": 10, "training_time": "28.0241"}
