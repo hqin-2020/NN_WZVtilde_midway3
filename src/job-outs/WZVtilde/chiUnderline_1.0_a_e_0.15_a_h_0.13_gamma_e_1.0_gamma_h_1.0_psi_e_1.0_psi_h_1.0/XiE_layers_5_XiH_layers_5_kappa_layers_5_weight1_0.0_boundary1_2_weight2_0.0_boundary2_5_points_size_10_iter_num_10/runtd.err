@@ -1,0 +1,51 @@
+2022-09-07 15:40:01.526221: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2022-09-07 15:40:01.531593: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /software/slurm-current-el8-x86_64/lib
+2022-09-07 15:40:01.531619: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Traceback (most recent call last):
+  File "WZVtilde_BFGS.py", line 107, in <module>
+    paramsFromFile = json.load(json_file)
+  File "/software/python-anaconda-2021.05-el8-x86_64/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/software/python-anaconda-2021.05-el8-x86_64/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/software/python-anaconda-2021.05-el8-x86_64/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/software/python-anaconda-2021.05-el8-x86_64/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2022-09-07 15:40:09.765934: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2022-09-07 15:40:09.771103: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /software/slurm-current-el8-x86_64/lib
+2022-09-07 15:40:09.771140: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-09-07 15:40:14.209607: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /software/slurm-current-el8-x86_64/lib
+2022-09-07 15:40:14.209652: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-09-07 15:40:14.209672: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (midway3-0002.rcc.local): /proc/driver/nvidia/version does not exist
+2022-09-07 15:40:14.210033: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "WZVtilde_variable.py", line 110, in <module>
+    logXiH_NN_tf = tf.saved_model.load(outputdir   + 'logXiH_NN')
+  File "/software/python-anaconda-2021.05-el8-x86_64/lib/python3.8/site-packages/tensorflow/python/saved_model/load.py", line 782, in load
+    result = load_partial(export_dir, None, tags, options)["root"]
+  File "/software/python-anaconda-2021.05-el8-x86_64/lib/python3.8/site-packages/tensorflow/python/saved_model/load.py", line 887, in load_partial
+    loader_impl.parse_saved_model_with_debug_info(export_dir))
+  File "/software/python-anaconda-2021.05-el8-x86_64/lib/python3.8/site-packages/tensorflow/python/saved_model/loader_impl.py", line 57, in parse_saved_model_with_debug_info
+    saved_model = parse_saved_model(export_dir)
+  File "/software/python-anaconda-2021.05-el8-x86_64/lib/python3.8/site-packages/tensorflow/python/saved_model/loader_impl.py", line 115, in parse_saved_model
+    raise IOError(
+OSError: SavedModel file does not exist at: /project/lhansen/NN_WZVtilde_midway3/output/WZVtilde/chiUnderline_1000_a_e_0150_a_h_0130_gamma_e_1000_gamma_h_1000_psi_e_1000_psi_h_1000/XiE_layers_5_XiH_layers_5_kappa_layers_5_weight1_0_boundary1_2_weight2_0_boundary2_5_points_size_10_iter_num_10/logXiH_NN/{saved_model.pbtxt|saved_model.pb}
+2022-09-07 15:40:14.962637: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2022-09-07 15:40:14.967334: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /software/slurm-current-el8-x86_64/lib
+2022-09-07 15:40:14.967359: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-09-07 15:40:19.451102: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /software/slurm-current-el8-x86_64/lib
+2022-09-07 15:40:19.451149: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-09-07 15:40:19.451169: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (midway3-0002.rcc.local): /proc/driver/nvidia/version does not exist
+2022-09-07 15:40:19.451533: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "WZVtilde_moments.py", line 137, in <module>
+    Fe_NN, firstCoefsE_NN, secondCoefsE_NN, HJB_E_NN, Fh_NN, firstCoefsH_NN, secondCoefsH_NN, HJB_H_NN, kappa_min_NN = [np.load(outputdir +i+'.npy')  for i in load_list]
+  File "WZVtilde_moments.py", line 137, in <listcomp>
+    Fe_NN, firstCoefsE_NN, secondCoefsE_NN, HJB_E_NN, Fh_NN, firstCoefsH_NN, secondCoefsH_NN, HJB_H_NN, kappa_min_NN = [np.load(outputdir +i+'.npy')  for i in load_list]
+  File "/software/python-anaconda-2021.05-el8-x86_64/lib/python3.8/site-packages/numpy/lib/npyio.py", line 417, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '/project/lhansen/NN_WZVtilde_midway3/output/WZVtilde/chiUnderline_1000_a_e_0150_a_h_0130_gamma_e_1000_gamma_h_1000_psi_e_1000_psi_h_1000/XiE_layers_5_XiH_layers_5_kappa_layers_5_weight1_0_boundary1_2_weight2_0_boundary2_5_points_size_10_iter_num_10/W_NN.npy'
